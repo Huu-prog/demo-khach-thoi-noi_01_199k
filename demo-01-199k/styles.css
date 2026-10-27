@@ -20,12 +20,12 @@ body {
 .header-section {
     position: relative;
     height: 60vh;
-    background: url('assets/img/2.webp') no-repeat center center/cover;
+    background: url('assets/img/10.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: #fc8d8d;
     padding: 0 15px;
 }
 
@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(247, 168, 184, 0.55); /* Tông màu hồng pastel đáng yêu */
+   
 }
 
 .header-text {
