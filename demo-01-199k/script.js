@@ -43,3 +43,30 @@ document.addEventListener("DOMContentLoaded", function () {
         return text.replace(/[&<>"']/g, function (m) { return map[m]; });
     }
 });
+
+// --- XỬ LÝ ZOOM ẢNH ALBUM ---
+document.addEventListener("DOMContentLoaded", function () {
+    const albumImages = document.querySelectorAll(".album-item img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxClose = document.querySelector(".lightbox-close");
+
+    albumImages.forEach(img => {
+        img.addEventListener("click", function () {
+            lightbox.classList.add("active");
+            lightboxImg.src = this.src;
+        });
+    });
+
+    // Đóng khi bấm nút X
+    lightboxClose.addEventListener("click", function () {
+        lightbox.classList.remove("active");
+    });
+
+    // Đóng khi bấm vào vùng nền tối xung quanh ảnh
+    lightbox.addEventListener("click", function (e) {
+        if (e.target !== lightboxImg) {
+            lightbox.classList.remove("active");
+        }
+    });
+});

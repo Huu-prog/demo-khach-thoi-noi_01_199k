@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiệp Mừng Thôi Nôi - Bé Gạo</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Link CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div class="main-content">
-        
+
         <!-- Header / Banner chính -->
         <header class="header-section">
             <div class="header-overlay"></div>
@@ -31,11 +35,15 @@
                 <h2 class="section-title">Thư Mời Thôi Nôi</h2>
                 <div class="divider"><i class="fa-solid fa-baby"></i></div>
                 <p class="intro-text">
-                    "Tzà... Trộm vía con đã tròn 1 tuổi rồi ạ! Cảm ơn ông bà, cô chú và anh chị đã luôn yêu thương, quan tâm và dõi theo từng bước con lớn khôn. Gia đình con trân trọng kính mời mọi người đến tham dự bữa tiệc mừng thôi nôi đầu đời của bé <strong>Phạm Gia Phú (tên ở nhà: Gạo)</strong> để chung vui và gửi cho con những lời chúc phúc ngọt ngào nhất nhé!"
+                    "Tzà... Trộm vía con đã tròn 1 tuổi rồi ạ! Cảm ơn ông bà, cô chú và anh chị đã luôn yêu thương, quan
+                    tâm và dõi theo từng bước con lớn khôn. Gia đình con trân trọng kính mời mọi người đến tham dự bữa
+                    tiệc mừng thôi nôi đầu đời của bé <strong>Phạm Gia Phú (tên ở nhà: Gạo)</strong> để chung vui và gửi
+                    cho con những lời chúc phúc ngọt ngào nhất nhé!"
                 </p>
             </div>
         </section>
 
+        <!-- Album Ảnh (Khoảnh khắc đáng yêu của bé) -->
         <!-- Album Ảnh (Khoảnh khắc đáng yêu của bé) -->
         <section class="section album-section">
             <div class="container">
@@ -43,45 +51,55 @@
                 <div class="divider"><i class="fa-solid fa-baby"></i></div>
                 <div class="album-grid">
                     <div class="album-item"><img src="assets/img/1.webp" alt="Bé cười tươi"></div>
-                    <div class="album-item"><img src="assets/img/2.webp" alt="Khoảnh khắc ngộ nghĩnh"></div>
-                    <div class="album-item"><img src="assets/img/3.webp" alt="Bé chơi đùa"></div>
+                    <div class="album-item"><img src="assets/img/3.webp" alt="Khoảnh khắc ngộ nghĩnh"></div>
+                    <div class="album-item"><img src="assets/img/7.webp" alt="Bé chơi đùa"></div>
+                    <div class="album-item"><img src="assets/img/3.webp" alt="Bé 1 tuổi"></div>
+                    <div class="album-item"><img src="assets/img/8.webp" alt="Bé chơi đùa"></div>
                     <div class="album-item"><img src="assets/img/4.webp" alt="Bé 1 tuổi"></div>
-                    <div class="album-item"><img src="assets/img/5.webp" alt="Bé chơi đùa"></div>
-                    <div class="album-item"><img src="assets/img/6.webp" alt="Bé 1 tuổi"></div>
+                    <div class="album-item"><img src="assets/img/9.webp" alt="Bé 1 tuổi"></div>
                 </div>
             </div>
         </section>
 
+        <!-- Modal Phóng To Ảnh (Lightbox) -->
+        <div id="lightbox" class="lightbox-modal">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" src="" alt="Zoom Image">
+        </div>
+
         <!-- Bản đồ / Địa điểm tổ chức -->
-        <section class="section map-section">
-            <div class="container">
-                <h2 class="section-title">Địa Điểm Tiệc</h2>
-                <div class="divider"><i class="fa-solid fa-baby"></i></div>
-                <p class="location-name"><strong>Tư Gia / Địa Điểm Tổ Chức</strong></p>
-                <p class="location-address"><i class="fa-solid fa-location-dot"></i> 16/144 Đường An Dương Vương, Phú Thượng, Tây Hồ, Hà Nội</p>
-                
-                <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/place/Nh%C3%A0+H%C3%A0ng+B%E1%BA%BFn+B%E1%BA%A1c/@21.0916256,105.7956741,21z/data=!4m14!1m7!3m6!1s0x3135aaba4176413d:0xdc7346286e241f2f!2zTmjDoCBIw6BuZyBC4bq_biBC4bqhYw!8m2!3d21.0916312!4d105.7959061!16s%2Fg%2F1th7vv3g!3m5!1s0x3135aaba4176413d:0xdc7346286e241f2f!8m2!3d21.0916312!4d105.7959061!16s%2Fg%2F1th7vv3g?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </section>
+        
+<section class="section map-section">
+    <div class="container">
+        <h2 class="section-title">Địa Điểm Tiệc</h2>
+        <div class="divider"><i class="fa-solid fa-baby"></i></div>
+        <p class="location-name"><strong>Tư Gia / Địa Điểm Tổ Chức</strong></p>
+        <p class="location-address"><i class="fa-solid fa-location-dot"></i> 16/144 Đường An Dương Vương, Phú Thượng, Tây Hồ, Hà Nội</p>
+        
+        <div class="map-responsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d465.31556511438043!2d105.7957939!3d21.0916447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aaba4176413d%3A0xdc7346286e241f2f!2zTmjDoCBIw6BuZyBC4bq_biBC4bqhYw!5e0!3m2!1svi!2s!4v1793108422593!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </div>
+</section>
 
         <!-- Gửi lời chúc (Sổ lưu bút) -->
         <section class="section wishes-section">
             <div class="container">
                 <h2 class="section-title">Gửi Lời Chúc Cho Bé</h2>
                 <div class="divider"><i class="fa-solid fa-baby"></i></div>
-                
+
                 <form id="wishes-form" class="wishes-form">
                     <input type="text" id="sender-name" placeholder="Tên của bạn / Cô chú..." required>
-                    <textarea id="sender-message" rows="4" placeholder="Nhập lời chúc hay gửi đến bé Gạo..." required></textarea>
+                    <textarea id="sender-message" rows="4" placeholder="Nhập lời chúc hay gửi đến bé Gạo..."
+                        required></textarea>
                     <button type="submit" class="btn-submit">Gửi Lời Chúc</button>
                 </form>
 
                 <div id="wishes-list" class="wishes-list">
                     <div class="wish-card">
                         <h4>Cô Mai Phương</h4>
-                        <p>Chúc con trai Gạo mau ăn chóng lớn, ngoan ngoãn và luôn là niềm tự hào của bố mẹ nhé! Chúc mừng sinh nhật 1 tuổi.</p>
+                        <p>Chúc con trai Gạo mau ăn chóng lớn, ngoan ngoãn và luôn là niềm tự hào của bố mẹ nhé! Chúc
+                            mừng sinh nhật 1 tuổi.</p>
                     </div>
                 </div>
             </div>
@@ -98,4 +116,5 @@
     <!-- Link JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
