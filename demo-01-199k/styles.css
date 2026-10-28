@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fc8d8d;
+    color: #ecebeb;
     padding: 0 15px;
 }
 
@@ -43,13 +43,19 @@ body {
     z-index: 1;
 }
 
-.header-text h2 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+.header-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Đẩy toàn bộ nội dung chữ xuống dưới đáy ảnh, tránh vùng mặt ở trên */
+    align-items: center;
+    padding-bottom: 40px; /* Khoảng cách chữ cách mép dưới một chút */
+}
+
+.header-text {
+    position: relative;
+    z-index: 2; /* Đảm bảo chữ nằm trên lớp overlay và ảnh */
+    text-align: center;
 }
 
 .header-text h1 {
@@ -63,7 +69,7 @@ body {
 .date-tag {
     font-size: 2rem;
     letter-spacing: 1px;
-    color: #ee0000;
+    color: #ffffff;
     font-weight: 500;
 }
 
