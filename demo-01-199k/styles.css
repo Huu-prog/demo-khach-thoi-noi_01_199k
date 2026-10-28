@@ -61,9 +61,9 @@ body {
 }
 
 .date-tag {
-    font-size: 0.95rem;
+    font-size: 2rem;
     letter-spacing: 1px;
-    color: #fff;
+    color: #ee0000;
     font-weight: 500;
 }
 
